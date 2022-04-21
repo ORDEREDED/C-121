@@ -1,41 +1,27 @@
-body
-{
-background-color:#fbd139;
-}
 
-h1
+#camera
 {
-  
-  color:rgb(38, 0, 255);
-  background-color: cornsilk;
-}
-
-#show_sketch
-{
-  float:right;
-}
-
-canvas 
-  {
-    border:5px solid white;
-    border-radius:20px;
-    animation-name: example;
+    width:360px;
+    height: 250px;
+    border:1px solid grey;
+    animation-name: Picture;
     animation-duration: 4s;
-    margin-top: 50px; 
     animation-iteration-count: infinite;
-    
 }
-@keyframes example {
-
-  from {box-shadow: 1px 1px 38px grey;}
-  to {box-shadow: 1px 1px 38px white;}
-
+@keyframes Picture{
+0%{box-shadow: 5px 5px 45px red;}
+25%{box-shadow: 5px 5px 45px blue;}
+50%{box-shadow: 5px 5px 45px green;}
+75%{box-shadow: 5px 5px 45px yellow;}
+100%{box-shadow: 5px 5px 45px purple;}
 }
-
-
-p
-  {
-    padding-top:10px;
-    font-size:25px;
-    
-  }
+#logo_img
+{
+    width: 150px;
+    border-radius: 100px;
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    background: linear-gradient(blue 0%, red 100%);
+    color: chartreuse;
+}
